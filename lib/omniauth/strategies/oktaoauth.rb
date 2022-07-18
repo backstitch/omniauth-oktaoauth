@@ -73,6 +73,8 @@ module OmniAuth
       end
 
       def callback_phase
+        Rails.logger.warn "callback_phase"
+        Rails.logger.warn request.params
         super
       end
 
